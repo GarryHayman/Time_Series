@@ -130,8 +130,7 @@ CONTAINS
 !   Removed all READ statement; variables to be passed to code by calling
 !   program
 
-      runfile='/data/grp/eow/garr/Projects/Methane/CODE/FORTRAN/'// &
-            'z_TEST/time_series_runfile.dat'
+      runfile='z_INPUT/time_series_runfile.dat'
       OPEN(UNIT=2,FILE=runfile,IOSTAT=ios,STATUS='OLD')
 
 !   Garry Hayman
@@ -278,8 +277,6 @@ CONTAINS
       time_series_routine    = 'time_series_gridded'
       WRITE(*,*) 'In routine: ',time_series_routine
 
-      WRITE(*,*) DEBUG
-
       IF (debug == 'Y') THEN
           WRITE(*,'(A11,I2,I6)')     'USE_FLAG = ',USE_FLAG,NTIMES
 
@@ -353,8 +350,6 @@ CONTAINS
       ENDIF
 
 !   Loop over length of vector - defined by ndata
-
-      WRITE(*,*) SHAPE(GRID_REF),NSIZE,NTIMES
 
       nspect         = 0
       nspect_valid   = 0
