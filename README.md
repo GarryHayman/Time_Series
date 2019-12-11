@@ -5,11 +5,12 @@ The FORTRAN time-series analysis routines were compiled for use with python and 
 * FORTRAN time-series analysis routines (as a single file)
    (a) Spectral_Analysis_routines_v1p1.f90, for processing large datasets
    (b) Spectral_Analysis_routines_v1p1_noWRITES.f90, for testing and debugging 
+* FORTRAN control program to undertake a time series analysis (Spectral_Analysis_main_v1p1.f90)
+* FORTRAN netCDF routines to input the time series data (Spectral_Analysis_READ_netCDF_v1p1.f90)
 
-To follow shortly
------------------
-* FORTRAN control program to undertake a time series analysis
-* FORTRAN netCDF routines to input the time series data
-* Example time series and runtime input data are provided, together with the corresponding output.
+* Zipped tar file with make files (Spectral_Analysis_make.tar.gz)
+* Zipped tar file with example point and gridded time series, runtime input data and the corresponding output (Spectral_Analysis_Test_Data_Output.tar.gz)
+
+The point example corresponds to site 10 in the paper (Table 2 and Figure 8).
 
 Garry Hayman, Centre for Ecology & Hydrology, garr@ceh.ac.uk
